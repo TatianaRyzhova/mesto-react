@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mesto-reactstatic/css/main.b1b4140b.chunk.css",
-    "main.js": "/mesto-reactstatic/js/main.bd9bdd25.chunk.js",
-    "main.js.map": "/mesto-reactstatic/js/main.bd9bdd25.chunk.js.map",
-    "runtime-main.js": "/mesto-reactstatic/js/runtime-main.38503a6d.js",
-    "runtime-main.js.map": "/mesto-reactstatic/js/runtime-main.38503a6d.js.map",
-    "static/js/2.3678423a.chunk.js": "/mesto-reactstatic/js/2.3678423a.chunk.js",
-    "static/js/2.3678423a.chunk.js.map": "/mesto-reactstatic/js/2.3678423a.chunk.js.map",
-    "static/js/3.deff9e5c.chunk.js": "/mesto-reactstatic/js/3.deff9e5c.chunk.js",
-    "static/js/3.deff9e5c.chunk.js.map": "/mesto-reactstatic/js/3.deff9e5c.chunk.js.map",
-    "index.html": "/mesto-reactindex.html",
-    "static/css/main.b1b4140b.chunk.css.map": "/mesto-reactstatic/css/main.b1b4140b.chunk.css.map",
-    "static/js/2.3678423a.chunk.js.LICENSE.txt": "/mesto-reactstatic/js/2.3678423a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/mesto-reactstatic/media/icon-trash.cbc09a89.svg",
-    "static/media/header-logo.a307e1c4.svg": "/mesto-reactstatic/media/header-logo.a307e1c4.svg"
+    "main.css": "./static/css/main.6e9d4afa.chunk.css",
+    "main.js": "./static/js/main.bd9bdd25.chunk.js",
+    "main.js.map": "./static/js/main.bd9bdd25.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e117725f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e117725f.js.map",
+    "static/js/2.3678423a.chunk.js": "./static/js/2.3678423a.chunk.js",
+    "static/js/2.3678423a.chunk.js.map": "./static/js/2.3678423a.chunk.js.map",
+    "static/js/3.deff9e5c.chunk.js": "./static/js/3.deff9e5c.chunk.js",
+    "static/js/3.deff9e5c.chunk.js.map": "./static/js/3.deff9e5c.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.6e9d4afa.chunk.css.map": "./static/css/main.6e9d4afa.chunk.css.map",
+    "static/js/2.3678423a.chunk.js.LICENSE.txt": "./static/js/2.3678423a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/icon-trash.cbc09a89.svg",
+    "static/media/header-logo.a307e1c4.svg": "./static/media/header-logo.a307e1c4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.38503a6d.js",
+    "static/js/runtime-main.e117725f.js",
     "static/js/2.3678423a.chunk.js",
-    "static/css/main.b1b4140b.chunk.css",
+    "static/css/main.6e9d4afa.chunk.css",
     "static/js/main.bd9bdd25.chunk.js"
   ]
 }
