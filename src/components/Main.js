@@ -18,7 +18,7 @@ function Main(props) {
       .catch((error) => {
         console.log(error)
       })
-  })
+  }, [])
 
   useEffect(() => {
     api.getInitialCards()
