@@ -19,6 +19,8 @@ function AddPlacePopup(props) {
       name,
       link
     });
+    setName('');
+    setLink('');
   }
 
   return (
@@ -31,11 +33,11 @@ function AddPlacePopup(props) {
       onSubmit={handleSubmit}
     >
       <input type="text" name="name" className="popup__input popup__input_type_card-title" id="card-title-input"
-             onChange={handleNameChange}
+             value={name} onChange={handleNameChange}
              placeholder="Название" minLength={2} maxLength={30} required/>
       <span id="card-title-input-error" className="input-error"/>
       <input type="url" name="link" className="popup__input popup__input_type_card-link" id="card-link-input"
-             onChange={handleLinkChange}
+             value={link} onChange={handleLinkChange}
              placeholder="Ссылка на картинку" required/>
       <span id="card-link-input-error" className="input-error"/>
     </PopupWithForm>
