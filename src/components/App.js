@@ -17,6 +17,7 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(false);
   const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     api.getUserInfo()
@@ -59,10 +60,12 @@ function App() {
       })
       .catch((error) => {
         console.log(error)
-      });
+      })
+    ;
   }
 
   function handleUpdateUser(user) {
+    setIsLoading(true);
     api.updateUserProfile(user.name, user.about)
       .then((updatedUser) => {
         setCurrentUser(updatedUser);
@@ -70,10 +73,14 @@ function App() {
       })
       .catch((error) => {
         console.log(error)
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }
 
   function handleUpdateAvatar(link) {
+    setIsLoading(true);
     api.updateAvatar(link.avatar)
       .then((updatedUser) => {
         setCurrentUser(updatedUser);
@@ -81,10 +88,14 @@ function App() {
       })
       .catch((error) => {
         console.log(error)
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }
 
   function handleAddPlaceSubmit(card) {
+    setIsLoading(true);
     api.postNewCard(card.name, card.link)
       .then((newCard) => {
         setCards([newCard, ...cards]);
@@ -92,6 +103,9 @@ function App() {
       })
       .catch((error) => {
         console.log(error)
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }
 
@@ -136,12 +150,14 @@ function App() {
         <EditProfilePopup
           isOpen={isEditProfilePopupOpen}
           onClose={closeAllPopups}
+          isLoading={isLoading}
           onUpdateUser={handleUpdateUser}
         />
 
         <AddPlacePopup
           isOpen={isAddPlacePopupOpen}
           onClose={closeAllPopups}
+          isLoading={isLoading}
           onAddPlace={handleAddPlaceSubmit}
         />
 
@@ -150,6 +166,7 @@ function App() {
         <EditAvatarPopup
           isOpen={isEditAvatarPopupOpen}
           onClose={closeAllPopups}
+          isLoading={isLoading}
           onUpdateAvatar={handleUpdateAvatar}
         />
 
